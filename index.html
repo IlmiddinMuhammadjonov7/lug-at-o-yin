@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS | Topshiriq</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="grid grid-cols-2 auto-rows-fr h-screen">
+      <div class="flex items-center flex-col border-b border-r">
+        <h1 class="font-black my-4">Yangi so'z</h1>
+        <form class="text-center">
+          <input
+            type="text"
+            placeholder="Eng word..."
+            class="input input-bordered w-full max-w-xs mb-3"
+            id="text"
+            autofocus
+          />
+          <input
+            type="text"
+            placeholder="Uzb word..."
+            class="input input-bordered w-full max-w-xs mb-3"
+            id="text"
+          />
+          <button class="btn btn-success text-white w-full max-w-xs">
+            Saqlash
+          </button>
+        </form>
+      </div>
+      <div></div>
+      <div class="overflow-x-auto">
+        <h1 class="my-4 font-black text-amber-600 text-center">
+          Yangi so'zlar
+        </h1>
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>EN</th>
+              <th>UZ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="joy"></tbody>
+        </table>
+      </div>
+      <div class="overflow-x-auto border-t border-l">
+        <h1 class="my-4 font-black text-green-600 text-center">
+          Yodlangan so'zlar
+        </h1>
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>EN</th>
+              <th>UZ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
